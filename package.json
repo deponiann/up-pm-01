@@ -1,0 +1,20 @@
+{
+  "name": "up-pm-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^35.1.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "sqlite3": "^5.1.7"
+  }
+}

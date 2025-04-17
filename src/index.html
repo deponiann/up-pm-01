@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Семейный бюджет</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Управление членами семьи</h1>
+        <!-- Список членов семьи -->
+        <h2>Список членов семьи</h2>
+        <table class="table table-striped" id="membersTable">
+            <thead>
+                <tr>
+                    <th>ФИО</th>
+                    <th>Дата рождения</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <!-- Форма добавления/редактирования -->
+        <h2>Добавить/Редактировать члена семьи</h2>
+        <form id="memberForm">
+            <input type="hidden" id="memberId">
+            <div class="mb-3">
+                <label for="fullName" class="form-label">ФИО</label>
+                <input type="text" class="form-control" id="fullName" required>
+            </div>
+            <div class="mb-3">
+                <label for="birthDate" class="form-label">Дата рождения (Excel serial)</label>
+                <input type="number" class="form-control" id="birthDate">
+            </div>
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+            <button type="button" class="btn btn-secondary" id="cancelEdit">Отмена</button>
+        </form>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
